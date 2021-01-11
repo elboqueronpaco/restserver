@@ -1,0 +1,19 @@
+{
+  "name": "restserver",
+  "version": "1.0.0",
+  "description": "Crear restserver con node y express",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "nodemon server/server.js"
+  },
+  "repository": "https://github.com/elboqueronpaco/restserver.git",
+  "author": "elboqueronpaco <elboqueronpaco@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
