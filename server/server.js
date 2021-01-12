@@ -1,3 +1,4 @@
+require('./config/config')
 const express = require('express')
 
 const app = express()
@@ -11,6 +12,6 @@ app.get('/', (req, res) => {
     res.json('Pagina de inicio')
 })
 
-app.listen(port, () => {
-    console.log(`servidor corriendo en http://localhost:${port}`)
+app.listen(process.env.PORT, () => {
+    console.log(`servidor corriendo en http://localhost:${process.env.PORT}`)
 })
