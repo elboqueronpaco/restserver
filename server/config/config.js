@@ -16,6 +16,6 @@
  if (process.env.NODE_ENV === 'dev') {
      urlDB = 'mongodb://localhost:27017/restserver'
  } else {
-     urlDB = 'mongodb+srv://elboqueronpaco:Ocap_5791@cluster0.egcxl.mongodb.net/restserver'
+     urlDB = process.env.MONGO_URI
  }
 process.env.URLDB = urlDB
