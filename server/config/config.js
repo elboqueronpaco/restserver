@@ -8,7 +8,19 @@
   * Entorno
   */
  process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
+ /**
+  * expiresIn
+  * 60 segundos
+  * 60 minutos
+  * 24 horas
+  * 30 dias
+  */
+process.env.EXPIRES_IN = 60 * 60 * 24 * 30 
 
+/**
+ * SEED
+ */
+process.env.SEED = process.env.SEED || 'estas-es-la-clave-secreta-desarrollo'
  /**
   * Base de datos
   */

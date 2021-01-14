@@ -16,7 +16,7 @@ const userAll = (req, res) => {
                     err
                 })
             }
-            User.count({ state: true }, (err, counting) => {
+            User.countDocuments({ state: true }, (err, counting) => {
                 res.json({
                     ok: true,
                     how: counting,
