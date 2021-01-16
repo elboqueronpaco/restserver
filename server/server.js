@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.json('Pagina de inicio')
 })
 
-app.use(router)
+app.use('/api',router)
 app.listen(process.env.PORT, () => {
     console.log(`servidor corriendo en http://localhost:${process.env.PORT}`)
 })
