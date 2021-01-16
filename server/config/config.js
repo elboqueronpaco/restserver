@@ -31,3 +31,8 @@ process.env.SEED = process.env.SEED || 'estas-es-la-clave-secreta-desarrollo'
      urlDB = process.env.MONGO_URI
  }
 process.env.URLDB = urlDB
+
+/**
+ * CLIENT_ID
+ */
+process.env.CLIENT_ID = process.env.CLIENT_ID || '163774569170-i5pc6icf8e33cbh3fpeeh6uual7u8lip.apps.googleusercontent.com'
